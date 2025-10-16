@@ -5,7 +5,10 @@ for _ in range(t):
     m = max(x,y)
     mi = min(x,y)
     prm = math.ceil(m/k)
-    if  m%k == 0:
+    prmi = prm
+    if mi%k !=0:
+        prmi += 1
+    elif  m%k == 0 :
         prmi = prm-1
     else:
         prmi = prm 
