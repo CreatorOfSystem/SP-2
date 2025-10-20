@@ -7,8 +7,8 @@ for _ in range(t):
         x, y = tuple(map(int, input().split()))
         data.append((x,y))
         x_count[x] = x_count.get(x, 0) +1
-        m = len(list(filter(lambda key: x_count[key] == 2, x_count)))
-        result = (n-2)*m
+    m = len(list(filter(lambda key: x_count[key] == 2, x_count)))
+    result = (n-2)*m
 
 
 t 
